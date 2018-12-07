@@ -3,20 +3,8 @@ package chapter1;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Q1 {
-    public static void main(String[] args) {
-        String hello = "Hello!";
-        boolean helloResult = isUnique(hello);
-        String name = "Alexander";
-        boolean nameResult = isUnique(name);
-        String uniqueStr = "asdf";
-        boolean uniqueStrResult = isUnique(uniqueStr);
-        System.out.println("helloResult: " + helloResult);
-        System.out.println("nameResult: " + nameResult);
-        System.out.println("uniqueStrResult: " + uniqueStrResult);
-    }
-
-    private static boolean isUnique(String str) {
+class Q1 {
+    static boolean isUnique(String str) {
         Set<Character> letters = new HashSet<>();
 
         for (int i = 0; i < str.length(); i++) {
@@ -31,7 +19,7 @@ public class Q1 {
         return true;
     }
 
-    private static boolean isUniqueNoExtraSpace(String str) {
+    static boolean isUniqueNoExtraSpace(String str) {
         // TODO
         return false;
     }
