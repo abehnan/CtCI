@@ -24,4 +24,12 @@ public class Chapter1Test {
         Assert.assertFalse(Q1.isUniqueNoExtraSpace(name));
         Assert.assertFalse(Q1.isUniqueNoExtraSpace(age));
     }
+
+    @Test
+    public void isAnagram() {
+        String name = "Alexander";
+        String anagram = "laval";
+        Assert.assertTrue(Q2.isAnagram(anagram));
+        Assert.assertFalse(Q2.isAnagram(name));
+    }
 }
