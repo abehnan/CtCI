@@ -14,4 +14,14 @@ public class Chapter1Test {
         Assert.assertFalse(Q1.isUnique(name));
         Assert.assertFalse(Q1.isUnique(age));
     }
+
+    @Test
+    public void isUniqueNoExtraSpace() {
+        String name = "Alexander";
+        String age = "twenty-three";
+        String unique = "qwerty";
+        Assert.assertTrue(Q1.isUniqueNoExtraSpace(unique));
+        Assert.assertFalse(Q1.isUniqueNoExtraSpace(name));
+        Assert.assertFalse(Q1.isUniqueNoExtraSpace(age));
+    }
 }
